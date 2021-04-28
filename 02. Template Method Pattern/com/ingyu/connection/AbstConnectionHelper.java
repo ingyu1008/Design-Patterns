@@ -21,6 +21,8 @@ public abstract class AbstConnectionHelper {
         int i = authorization(userName);
 
         switch (i) {
+        case -1:
+            throw new Error("[ERROR] Can't Connect After 22:00");
         case 0:
             System.out.println("[DEBUG] Game Master");
             break;

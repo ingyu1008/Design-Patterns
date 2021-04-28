@@ -3,7 +3,7 @@ public class DefaultConnectionHelper extends AbstConnectionHelper {
 
     @Override
     protected String doSecurity(String string) {
-        System.out.println("Decoding Info");
+        System.out.println("Decoding Info with Reinforced Algorithm");
         return null;
     }
 
@@ -16,6 +16,8 @@ public class DefaultConnectionHelper extends AbstConnectionHelper {
     @Override
     protected int authorization(String userName) {
         System.out.println("Authorization");
+        boolean isAfter2200 = true;
+        if(isAfter2200) return -1;
         return 0;
     }
 
