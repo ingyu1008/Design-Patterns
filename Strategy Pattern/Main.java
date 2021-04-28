@@ -9,5 +9,8 @@ public class Main {
 
         character.setWeapon(new Sword());
         character.attack();
+
+        character.setWeapon(new Axe());
+        character.attack();
     }
 }
